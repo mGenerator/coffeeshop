@@ -1,0 +1,27 @@
+$color-primary: #216289;
+$color-secondary: #fdfeca;
+body{
+    background-image: linear-gradient($color-primary, $color-secondary);
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.cust-bg-image{
+    background-image: url("../images/coffeeShopbg.gif");
+    height: 600px;
+
+}
+.header-content{
+    background-image: linear-gradient(to right, $color-primary, $color-secondary);
+    
+    border-radius: 20px;
+    /* box-shadow: ; */
+}
+.cust-img{
+    max-width: 150px;
+}
+.cust-img2{
+    max-width: 35px;
+}
+nav{
+    max-height: 40px;
+}

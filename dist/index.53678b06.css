@@ -1,0 +1,28 @@
+body {
+  background-image: linear-gradient(#216289, #fdfeca);
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.cust-bg-image {
+  background-image: url("coffeeShopbg.5fe75ba1.gif");
+  height: 600px;
+}
+
+.header-content {
+  background-image: linear-gradient(to right, #216289, #fdfeca);
+  border-radius: 20px;
+}
+
+.cust-img {
+  max-width: 150px;
+}
+
+.cust-img2 {
+  max-width: 35px;
+}
+
+nav {
+  max-height: 40px;
+}
+/*# sourceMappingURL=index.53678b06.css.map */
