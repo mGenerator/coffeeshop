@@ -7,16 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.scss">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- Mea Culpa Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mea+Culpa&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="row header-content">
-            <div class="col">
-                <img src="images/coffeeshopLogo.jpg" class="img-fluid cust-img" alt="Coffee Shop, Best Quality">
+        <div class="row header-content align-items-center">
+            <div class="col d-flex justify-content-center">
+                <img src="images/coffeeshopLogo.jpg" class="img-fluid header-img" alt="Coffee Shop, Best Quality">
             </div>
-            <div class="col">
+            <div class="col text-nowrap">
                 <h1>Java Kingdom</h1>
                 <h2>Where Mocha <span>is</span> Might!</h2>
             </div>
@@ -26,7 +30,7 @@
 </header>    
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/coffeeshopLogo.jpg" class="img-fluid cust-img2"></a>
+      <a class="navbar-brand" href="#"><img src="images/coffeeshopLogo.jpg" class="img-fluid menu-img"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,37 +40,154 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Menu</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Gift Shop</a></li>
+              <li><a class="dropdown-item" href="#">Catering</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <span class="navbar-text ms-auto">
+                <a role="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fa fa-sign-in"></i> Reservations
+                </a>
+                </span>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">About Us</a>
           </li>
+          
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <!-- Modal Button -->
+        <span class="navbar-text ms-auto">
+          <a role="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fa fa-sign-in"></i> Reservations
+          </a>
+      </span>
       </div>
     </div>
   </nav>
-<main>
-    <div class="container cust-bg-image">
-        <div class="row">
-            <div class="col">FILLER</div>
+  <!-- Modal Button Code -->
+  <div id="loginModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Reserve Your Kingdom for a Day</h3>
+                <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <!-- Email -->
+                        <div class="row">
+                            <div class="mb-3 col-12">
+                                <label for="cust-name" class="sr-only">Name</label>
+                                <input class="cust-name form-control-sm" type="text" id="cust-name" placeholder="Enter name">
+                            </div>
+                                <!-- Password -->
+                                <div class="col-12 mb-3">
+                                    <label for="cust-date" class="sr-only">Date</label>
+                                    <input id="cust-date" class="form-control form-control-sm" type="date" placeholder="Enter Password">
+                                </div>
+                            <!-- Remember me -->
+                            <div class="col">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cancel -->
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                             </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-
-</main>    
+</div>
+  <body>
+  <main class="bg-image">
+    <!-- Carousel Videos -->
+    <div class="carousel-container ">
+        
+          <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+          
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nyDnQQSUfL0?si=ydJKpHoDa5UfXWrT" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+          
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/eTz8RlWaphY?si=Zg3lIadBTBRrXKeW" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+          
+              <!-- Third Slide -->
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Idbt-pc8pXQ?si=zPSOg2jGVMgjeLsP" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>   
+    </div>
+  </main>
+  <footer class="bg-body-tertiary py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <!-- Footer Links -->
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li class="mx-3">
+              <a href="#" class="text-dark btn btn-outline-primary">Home</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class=" text-dark btn btn-outline-primary">Menu</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-dark btn btn-outline-primary">Services</a>
+            </li>
+            <li class="mx-3">
+              <a href="#" class="text-dark btn btn-outline-primary">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>   
 </body>
 </html>

@@ -3,25 +3,61 @@ $color-secondary: #fdfeca;
 body{
     background-image: linear-gradient($color-primary, $color-secondary);
     background-repeat: no-repeat;
-    height: 500px;
+    height: 900px;
+    font-family: "Lobster", serif;
 }
-.cust-bg-image{
+h1, h2{
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 80%;
+}
+.bg-image{
     background-image: url("../images/coffeeShopbg.gif");
-    height: 600px;
+    height: 1080px;
 
 }
 .header-content{
     background-image: linear-gradient(to right, $color-primary, $color-secondary);
     
     border-radius: 20px;
+    height: 100px;
     /* box-shadow: ; */
 }
-.cust-img{
-    max-width: 150px;
+.header-img{
+    max-height: 75px;
+    border-radius: 10px;
 }
-.cust-img2{
+.menu-img{
     max-width: 35px;
+    border-radius: 5px;
 }
 nav{
     max-height: 40px;
+    
+}
+.carousel-container{
+    margin: 0 auto;
+}
+@media(max-width:768px){
+    .carousel-container{
+        width: 30%;
+    }
+    
+}
+@media(min-width: 992px){
+    .carousel-container{
+        width: 50%;
+    }
+}
+@media(min-width: 1200px){
+    .carousel-container{
+        width: 80%;
+    }
+}
+.row-content{
+    height: 360px;
 }

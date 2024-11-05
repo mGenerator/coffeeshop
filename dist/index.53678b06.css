@@ -1,28 +1,68 @@
 body {
   background-image: linear-gradient(#216289, #fdfeca);
   background-repeat: no-repeat;
-  height: 500px;
+  height: 900px;
+  font-family: Lobster, serif;
 }
 
-.cust-bg-image {
+h1, h2 {
+  font-style: normal;
+  font-weight: 400;
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.bg-image {
   background-image: url("coffeeShopbg.5fe75ba1.gif");
-  height: 600px;
+  height: 1080px;
 }
 
 .header-content {
   background-image: linear-gradient(to right, #216289, #fdfeca);
   border-radius: 20px;
+  height: 100px;
 }
 
-.cust-img {
-  max-width: 150px;
+.header-img {
+  border-radius: 10px;
+  max-height: 75px;
 }
 
-.cust-img2 {
+.menu-img {
+  border-radius: 5px;
   max-width: 35px;
 }
 
 nav {
   max-height: 40px;
+}
+
+.carousel-container {
+  margin: 0 auto;
+}
+
+@media (width <= 768px) {
+  .carousel-container {
+    width: 30%;
+  }
+}
+
+@media (width >= 992px) {
+  .carousel-container {
+    width: 50%;
+  }
+}
+
+@media (width >= 1200px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
+
+.row-content {
+  height: 360px;
 }
 /*# sourceMappingURL=index.53678b06.css.map */
